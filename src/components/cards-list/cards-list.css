@@ -1,0 +1,25 @@
+
+.heroes-container {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.heroes-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.heroes-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .heroes-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
